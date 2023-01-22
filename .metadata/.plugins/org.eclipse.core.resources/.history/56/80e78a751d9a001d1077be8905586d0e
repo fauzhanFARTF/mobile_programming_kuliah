@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TableLayout 
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp" >
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/masukkan" />
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" >
+                <requestFocus />
+            </EditText>
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:prompt="@string/pilihan" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Konversi"
+            android:text="@string/Konversi" />
+         </TableRow>
+         <TableRow
+             android:id="@+id/tableRow3"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" >
+             <TextView
+                 android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Celsius" />
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:inputType="number"
+                    tools:ignore="Deprecated" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Reamur" />
+                    <EditText
+                        android:id="@+id/editText3"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:editable="false"
+                        tools:ignore="Deprecated" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Fahrenheit" />
+                        <EditText
+                            android:id="@+id/editText4"
+	                        android:layout_width="140dp"
+	                        android:layout_height="wrap_content"
+	                        android:editable="false"
+	                        android:inputType="number"
+	                        tools:ignore="Deprecated" />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Kelvin" />
+                            <EditText
+                                android:id="@+id/editText5"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:editable="false" 
+                                tools:ignore="Deprecated" />
+         </TableRow>
+        </TableLayout>
+</RelativeLayout>
