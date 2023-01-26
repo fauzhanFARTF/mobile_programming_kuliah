@@ -1,0 +1,97 @@
+﻿.titleMenu {
+    font-family: Verdana;
+    text-align: center;
+    font-size: medium;
+    color: #FFFFFF;
+    font: bold 15px Verdana;
+}
+/* For Button ==> Start */
+input.btn {
+    color: black;
+    background-color: #333333;
+    border: solid 1px #b0c4de;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    input.btn[disabled] {
+        color: #a9a9a9;
+    }
+/* Sidebar */
+#sidebar {
+    float: left;
+    width: 240px;
+}
+
+.slider-wrap {
+}
+
+#main-photo-slider {
+    width: 402px;
+    overflow: hidden;
+}
+
+#from_portfolio {
+    background: #999999;
+    height: 164px;
+    width: 400px;
+    margin: auto;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    overflow: hidden;
+}
+
+.stripViewer .panelContainer .panel ul {
+    text-align: left;
+    margin: 0 15px 0 30px;
+}
+
+.stripViewer {
+    position: relative;
+    overflow: hidden;
+}
+
+    .stripViewer .panelContainer {
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+        .stripViewer .panelContainer .panel {
+            float: left;
+            height: 100%;
+            width: 670px;
+            overflow: hidden;
+        }
+
+.stripNavL, .stripNavR, .stripNav {
+    display: none;
+}
+
+.nav-thumb {
+    border: 1px solid black;
+    margin-right: 5px;
+}
+
+#movers-row {
+    margin: -43px 0 0 62px;
+}
+
+    #movers-row div {
+        width: 20%;
+        float: left;
+    }
+
+        #movers-row div a.cross-link {
+            float: right;
+        }
+
+.photo-meta-data {
+    padding: 5px;
+    color: white;
+}
+
+    .photo-meta-data span {
+        font-size: 13px;
+    }
