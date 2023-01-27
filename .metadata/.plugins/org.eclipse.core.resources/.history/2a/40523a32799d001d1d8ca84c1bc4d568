@@ -1,0 +1,32 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	 android:orientation="vertical"
+	 android:layout_width="fill_parent"
+	 android:layout_height="fill_parent">
+	 
+	 <EditText
+	 android:layout_height="wrap_content"
+	 android:layout_width="fill_parent"
+	 android:id="@+id/Enim"
+	 android:hint="@string/Enim"/>
+	 <EditText
+	 android:layout_height="wrap_content"
+	 android:layout_width="fill_parent"
+	 android:id="@+id/Enama"
+	 android:hint="@string/Enama"/>
+	 <EditText
+	 android:layout_height="wrap_content"
+	 android:layout_width="fill_parent"
+	 android:id="@+id/Ejurusan"
+	 android:hint="@string/Eemail"/>
+	 	 <EditText
+	 android:layout_height="wrap_content"
+	 android:layout_width="fill_parent"
+	 android:id="@+id/Ejurusan"
+	 android:hint="@string/Eemail"/>
+	 <Button
+	 android:layout_width="wrap_content"
+	 android:layout_height="wrap_content"
+	 android:id="@+id/simpan"
+	 android:text="@string/simpan"/>
+</LinearLayout>

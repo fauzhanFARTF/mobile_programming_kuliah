@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;CustomHttpClient.java&apos; to &apos;soal2_UAS_malam/src/com.example.soal2_uas_malam&apos;&#x0D;&#x0A;- Original project: &apos;pertemuan10_database&apos;&#x0D;&#x0A;- Destination element: &apos;soal2_UAS_malam/src/com.example.soal2_uas_malam&apos;&#x0D;&#x0A;- Original element: &apos;com.example.pertemuan10_database.CustomHttpClient.java&apos;" description="Copy compilation unit" destination="=soal2_UAS_malam/src&lt;com.example.soal2_uas_malam" element1="/src&lt;com.example.pertemuan10_database{CustomHttpClient.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1674812383670" units="1" version="1.0"/>
+</session>

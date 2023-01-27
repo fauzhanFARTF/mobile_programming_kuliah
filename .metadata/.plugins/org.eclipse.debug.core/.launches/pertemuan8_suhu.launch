@@ -8,12 +8,10 @@
 <stringAttribute key="com.android.ide.eclipse.adt.target" value="AUTO"/>
 <booleanAttribute key="com.android.ide.eclipse.adt.wipedata" value="false"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/pertemuan8_suhu"/>
-<listEntry value="/pertemuan8_suhu/AndroidManifest.xml"/>
+<listEntry value="/pertemuan08_suhu"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="4"/>
-<listEntry value="1"/>
 </listAttribute>
-<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="pertemuan8_suhu"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="pertemuan08_suhu"/>
 </launchConfiguration>

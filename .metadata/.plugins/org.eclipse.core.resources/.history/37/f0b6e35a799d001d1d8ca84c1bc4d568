@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	 <string name="app_name">Akademik</string>
+	 <string name="action_settings">Settings</string>
+	 <string name="Enim">Masukan NIM</string>
+	 <string name="Enama">Masukan Nama</string>
+	 <string name="Eemail">Masukan Jurusan</string>
+	 	 <string name="Eemail">Masukan Jurusan</string>
+	 <string name="simpan">Simpan</string>
+</resources>

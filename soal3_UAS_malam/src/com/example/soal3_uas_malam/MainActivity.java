@@ -1,18 +1,48 @@
 package com.example.soal3_uas_malam;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.app.Activity;
 import android.view.Menu;
-import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.Toast;
 
 
 public class MainActivity extends Activity {
-
+    ListView listBahasa;
+    String[] bahasa = {
+            "PHP",
+            "Javascript",
+            "NodeJS",
+            "Laravel",
+            "Codeigniter",
+            "HTML",
+            "CSS"
+    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_expandable_list_item_1, bahasa);
+        //--ListView---
+        listBahasa = (ListView) findViewById (R.id.ListView1);
+        listBahasa.setAdapter(adapter);
+        listBahasa.setOnItemClickListener(new OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+                                    long arg3) {
+                // TODO Auto-generated method stub
+                int index = arg2;
+                Toast.makeText(getBaseContext(), "List yang dipilih : " + bahasa[index], Toast.LENGTH_SHORT).show();
+            }
+        });
     }
+
 
 
     @Override
@@ -22,15 +52,4 @@ public class MainActivity extends Activity {
         return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
 }

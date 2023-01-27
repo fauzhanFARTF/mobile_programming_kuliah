@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Panjang : "/>
+
+    <EditText
+        android:id="@+id/panjang"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:inputType="numberSigned" />
+
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Lebar : "/>
+
+    <EditText
+        android:id="@+id/lebar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:inputType="numberSigned" />
+
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Tinggi : "/>
+
+    <EditText
+        android:id="@+id/tinggi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:inputType="numberSigned" />
+    
+    <Button android:id="@+id/btnNextScreen"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Kirim ke Activity Kedua"
+        android:layout_marginTop="15dip"/>
+
+</LinearLayout>

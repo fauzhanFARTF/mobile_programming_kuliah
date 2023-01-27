@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="app_name">soal1_UAS_malam</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="app_name">Suhu_JR</string>
     <string name="action_settings">Settings</string>
-
+    <string name="pilihan">Pilihan</string>
+    <string name="reset">Reset</string>
+	<string name="masukkan">Masukkan Suhu</string>
+	<string name="Konversi">Konversi</string>
+	<string name="Celsius">Celsius</string>
+	<string name="Reamur">Reamur</string>
+	<string name="Fahrenheit">Fahrenheit</string>
+	<string name="Kelvin">Kelvin</string>
 </resources>

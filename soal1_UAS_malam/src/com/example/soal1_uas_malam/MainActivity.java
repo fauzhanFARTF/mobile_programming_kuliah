@@ -4,16 +4,15 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.Toast;
+import android.app.AlertDialog; 
+import android.content.DialogInterface;
 
 public class MainActivity extends Activity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -21,16 +20,82 @@ public class MainActivity extends Activity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
-
+  //Jika Tekan Tombol Back
+    public void onBackPressed(){
+    	exit();
+    }
+    private void exit(){
+    	AlertDialog.Builder builder = new AlertDialog.Builder(this);
+    	builder.setMessage("Are you sure want to exit?")
+    	.setCancelable(false)//tidak bisa tekan tombol back
+    	//jika pilih yes
+    	.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+			public void onClick(DialogInterface dialog, int id){
+				finish();
+			}
+		})
+		//Jika pilih no
+		.setNegativeButton("No", new DialogInterface.OnClickListener() {
+			public void onClick(DialogInterface dialog, int id){
+				dialog.cancel();
+			}
+		}).show();
+			}
+    private Spinner sp;
+    private EditText edt_awal, edt_C, edt_R, edt_F;
+    private String[] list={"C","R","F"};
+    Double awal, celsius, reamur, fahrenheit;
+    ArrayAdapter<String> adapter;
+    
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        sp=(Spinner) findViewById(R.id.spinner1);
+        edt_awal=(EditText) findViewById(R.id.editText1);
+        edt_C=(EditText) findViewById(R.id.editText2);
+        edt_R=(EditText) findViewById(R.id.editText3);
+        edt_F=(EditText) findViewById(R.id.editText4);
+        adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, list);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        sp.setAdapter(adapter);
+    }
+    public void Konversi(View v){
+    	String satuan = String.valueOf(sp.getSelectedItemPosition());
+    	if(edt_awal.getText().toString().equals("")){
+    		Toast.makeText(getBaseContext(), "Masukkan suhu awal, default suhu awal = 0 ", Toast.LENGTH_LONG).show();
+    		awal = 0.0;
+    	}else{
+    		awal = Double.parseDouble(edt_awal.getText().toString());
+    	}
+    	if(satuan.equals("0")){
+    		celsius = awal;
+    		reamur = 0.8 * awal;
+    		fahrenheit = (1.8 * awal) + 32;
+    		edt_C.setText(String.valueOf(celsius));
+    		edt_R.setText(String.valueOf(reamur));
+    		edt_F.setText(String.valueOf(fahrenheit));
+    	}else if(satuan.equals("1")){
+    		celsius = 1.25 * awal;
+    		reamur = awal;
+    		fahrenheit = (2.25 * awal) + 32;
+    		edt_C.setText(String.valueOf(celsius));
+    		edt_R.setText(String.valueOf(reamur));
+    		edt_F.setText(String.valueOf(fahrenheit));
+    	}else if(satuan.equals("2")){
+    		celsius = 0.55555 *(awal - 32);
+    		reamur = 0.44444 * (awal - 32);
+    		fahrenheit = awal;
+    		edt_C.setText(String.valueOf(celsius));
+    		edt_R.setText(String.valueOf(reamur));
+    		edt_F.setText(String.valueOf(fahrenheit));
+    	}else if(satuan.equals("3")){
+    		celsius = awal-273;
+	    	reamur = 0.8 * (awal-273);
+	    	fahrenheit = (1.8 * (awal-273)) + 32;
+	    	edt_C.setText(String.valueOf(celsius));
+			edt_R.setText(String.valueOf(reamur));
+			edt_F.setText(String.valueOf(fahrenheit));
+    }
     }
 }

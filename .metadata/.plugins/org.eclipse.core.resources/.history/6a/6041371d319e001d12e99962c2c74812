@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<TextView android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Data yang dikirim"
+    android:textSize="25dip"
+    android:layout_gravity="center"
+    android:layout_margin="15dip"/>
+<TextView android:id="@+id/txtPanjang"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dip"
+    android:textSize="18dip"/>
+<TextView android:id="@+id/txtLebar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dip"
+    android:textSize="18dip"/>
+<TextView android:id="@+id/txtTinggi"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dip"
+    android:textSize="18dip"/>
+<Button android:id="@+id/btnClose"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dip"
+    android:text="Close"/>
+</LinearLayout>
